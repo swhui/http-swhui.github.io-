@@ -1,9 +1,10 @@
-## Welcome to Statistics and Data in Pok�mon!
+## Welcome to Statistics and Data in Pokémon!
 
-This website will be dedicated an archive of The Pok�mon Company in regards to its social responsibility
-in this website, you will
+This website will be dedicated an archive of The Pokémon Company in regards to its social responsibility
+This website features data analysis projects, the growth of the company over time, and a hub to links in regards to the company's actions as a part of its social responsibility.
 
-[Click here to download the CSV!](https://swhui.github.io/StatisticsinPokemon/pokemon.csv)
+
+[Here is a CSV file of over 800 Pokémon and their stats, found from the Kaggle site!](https://swhui.github.io/StatisticsinPokemon/pokemon.csv)
 
 ### Markdown
 
