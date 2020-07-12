@@ -45,6 +45,23 @@ td+td+td+td+td+td+td{
   width: auto;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 </style>
 </head>
 
@@ -66,7 +83,23 @@ td+td+td+td+td+td+td{
 <p><a href="https://swhui.github.io/StatisticsinPokemon/pokemon.csv">Here</a> is
   a CSV file of over 800 Pokémon and their stats found from the Kaggle site!</p>
 
-
+<div class="row">
+  <div class="column">
+    <a href="https://swhui.github.io/StatisticsinPokemon/data-project/">
+    <img src="data-pokemon.png" alt="Data Analysis Pokemon Projects" style="width:100%">
+    </a>
+  </div>
+  <div class="column">
+    <a href="https://swhui.github.io/StatisticsinPokemon/history/">
+    <img src="history-pokemon.png" alt="Pokemon over Time" style="width:100%">
+    </a>
+  </div>
+  <div class="column">
+    <a href="https://swhui.github.io/StatisticsinPokemon/social-impact/">
+    <img src="social-impact.png" alt="Social Impact of Pokemon" style="width:100%">
+    </a>
+  </div>
+</div>
 
 
 
