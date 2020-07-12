@@ -1,7 +1,9 @@
-## Welcome to Statistics and Data in Pokémon!
+## Welcome to Statistics and Data in Pokï¿½mon!
 
-This website will be dedicated an archive of P
+This website will be dedicated an archive of The Pokï¿½mon Company in regards to its social responsibility
+in this website, you will
 
+[Click here to download the CSV!](https://swhui.github.io/StatisticsinPokemon/pokemon.csv)
 
 ### Markdown
 
