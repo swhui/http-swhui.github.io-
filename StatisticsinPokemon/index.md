@@ -1,6 +1,7 @@
 ## Welcome to Statistics and Data in Pokémon!
 
-This website will be dedicated an archive of The Pokémon Company in regards to its social responsibility
+This website will be dedicated an archive of The Pokémon Company and data analysis projects. Pokémon is well known and loved by many people around the world. Since its humble beginnings in 1999, the franchise has grown tremendously. With millions of players around the world, this also makes the world of Pokémon a great way to start statistics-related projects.
+
 This website features data analysis projects, the growth of the company over time, and a hub to links in regards to the company's actions as a part of its social responsibility.
 
 
