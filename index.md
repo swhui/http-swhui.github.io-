@@ -1,4 +1,4 @@
-## Welcome to Statistics and Data in Pokémon!
+## This is the Sharon home repo
 
 This website will be dedicated an archive of P
 
