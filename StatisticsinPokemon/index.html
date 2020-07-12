@@ -10,15 +10,22 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="styles.css">
 <style>
+
+.monospace {
+  font-family: "Lucida Console", Courier New, monospace;
+}
+
 body {
   background-color: white;
 }
 
 table {
-  overflow-y:scroll;
+  class="monospace"
+  overflow-y: scroll;
   border-collapse: collapse;
   max-height: 50px;
   border: solid #000
+  overflow-x: scroll;
 }
 
 td{
@@ -27,7 +34,6 @@ td{
 }
 
 td {
-
 }
 td {
   max-width: 150px;
@@ -39,6 +45,7 @@ td {
 
 td+td {
   width: 100px;
+  max-height: 50px;
 }
 
 td+td+td+td+td+td+td{
@@ -52,7 +59,7 @@ td+td+td+td+td+td+td{
 .column {
   float: left;
   width: 33.33%;
-  padding: 5px;
+  padding: 50px;
 }
 
 /* Clearfix (clear floats) */
@@ -62,25 +69,28 @@ td+td+td+td+td+td+td{
   display: table;
 }
 
+
+
+
 </style>
 </head>
 
 <body>
 
-<h1 style = "text-align:center">Welcome to Statistics and Data in Pokémon!</h1>
+<h1 style = "text-align:center" class="monospace">Welcome to Statistics and Data in Pokémon!</h1>
 
-<p>This website will be dedicated an archive of The Pokémon Company and data
+<p class="monospace">This website will be dedicated an archive of The Pokémon Company and data
   analysis projects. Pokémon is well known and loved by many people around the
   world. Since its humble beginnings in 1999, the franchise has grown
   tremendously. With millions of players around the world, this also makes the
   world of Pokémon a great way to start statistics-related projects.<p>
 
-<p>This website features data analysis projects, the growth of the company over
+<p class="monospace">This website features data analysis projects, the growth of the company over
   time, and a hub to links in regards to the company's actions as a part of its
   social responsibility.</p>
 
 
-<p><a href="https://swhui.github.io/StatisticsinPokemon/pokemon.csv">Here</a> is
+<p class="monospace"><a href="https://swhui.github.io/StatisticsinPokemon/pokemon.csv">Here</a> is
   a CSV file of over 800 Pokémon and their stats found from the Kaggle site!</p>
 
 <div class="row">
@@ -101,10 +111,13 @@ td+td+td+td+td+td+td{
   </div>
 </div>
 
+<h2 style = "text-align:center" class="monospace"> Pokémon Datasets </h2>
+
+<p class="monospace"> Below is an archive of datasets found using Kaggle, Serebii, Wikipedia, etc. Feel free to use them and learn about the different datasets from other users.</p>
 
 
-<table>
-  <tr>
+<table overflow-y: scroll;>
+  <tr class="monospace">
     <th>Contributor</th>
     <th>Coverage</th>
     <th>Creator</th>
@@ -121,15 +134,17 @@ td+td+td+td+td+td+td{
     <th>Title</th>
     <th>Type</th>
   </tr>
-  <tr>
+  <tbody>
+  <tr class="monospace">
     <td>Rounak Banik</td>
     <td>Kaggle</td>
     <td>Rounak Banik</td>
     <td>2017-09-29</td>
-    <td>The dataset include information on all 802 Pokémon from all 7 generation
-       of Pokémon so far. The dataset include base stats, height weight,
-       classfication, egg steps, experience, abilities, etc.
-       The information was scaped from http://serebii.net/</td>
+    <td>
+The dataset includes information on all 802 Pokémon from all 7 generation
+of Pokémon so far. The dataset include base stats, height weight,
+classfication, egg steps, experience, abilities, etc.
+The information was scaped from http://serebii.net/</td>
     <td><a href="https://swhui.github.io/StatisticsinPokemon/pokemon.csv">CSV file</a></td>
     <td><div class=scrollable; overflow:auto>https://www.kaggle.com/rounakbanik/pokemon/metadata</div></td>
     <td>en</td>
@@ -141,6 +156,7 @@ td+td+td+td+td+td+td{
     <td>The Complete Pokemon Dataset</td>
     <td>Dataset</td>
   </tr>
+</tbody>
 </table>
 
 
