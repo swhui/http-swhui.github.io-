@@ -2,190 +2,360 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing: border-box;
-}
+    <title>Statistics and Data in Pokemon</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-body {
-  background-color: #474e5d;
-  font-family: Helvetica, sans-serif;
-}
 
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
-
-/* Container around content */
-.container {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-
-/* The circles on the timeline */
-.container::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #FF9F55;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-/* Place the container to the left */
-.left {
-  left: 0;
-}
-
-/* Place the container to the right */
-.right {
-  left: 50%;
-}
-
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
-
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -16px;
-}
-
-/* The actual content */
-.content {
-  padding: 20px 30px;
-  background-color: white;
-  position: relative;
-  border-radius: 6px;
-}
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-  .timeline::after {
-  left: 31px;
-  }
-
-  /* Full-width containers */
-  .container {
-  width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
-  }
-
-  /* Make sure that all arrows are pointing leftwards */
-  .container::before {
-  left: 60px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-  }
-
-  /* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-  left: 15px;
-  }
-
-  /* Make all right containers behave like the left ones */
-  .right {
-  left: 0%;
-  }
-}
-.monospace {
-  font-family: "Lucida Console", Courier New, monospace;
-}
-
-</style>
 </head>
 
-<h1 style = "text-align:center" class="monospace"> Pokémon Timeline</h1>
+<h1 style = "text-align:center" class="main"> Pokémon Timeline</h1>
 
 
 <body>
 
 <div class="timeline">
+  <div class="container right">
+    <div class="content">
+      <h2>2020</h2>
+      <p> <b> Nintendo Switch: </b>
+        <br><b>&middot;</b>Pokémon Café Mix
+        <br><b>&middot;</b>Pokémon Mystery Dungeon: Rescue Team DX
+      <br><img src="2020.jpg" alt="Rescue Team DX" class="center">
+      </p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2019</h2>
+      <p> <b>Mobile Game: </b>
+        <br><b>&middot;</b>Pokémon Rumble Rush
+        <br><b>&middot;</b>Pokémon: Magikarp Jump
+        <br><b>&middot;</b>Pokémon Masters
+        <br><b>&middot;</b>Pokémon Wave Hello
+      <br> <b>Nintendo Switch: </b>
+      <br><b>&middot;</b>Pokémon Sword
+      <br><b>&middot;</b>Pokémon Shield
+      <br> <b>PC Titles: </b>
+      <br><b>&middot;</b>Pokémon Roll Call Rhythm Game
+      <br><b>&middot;</b>Pokémon Medallion Battle
+      <br><b>&middot;</b>Pokémon Tower Battle
+      <br><img src="2019.jpg" alt="Pokémon Sword; Pokémon Shield" class="center">
+      </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2018</h2>
+      <p> <b>Nintendo Switch: </b>
+        <br><b>&middot;</b>Pokémon Let's Go, Pikachu
+        <br><b>&middot;</b>Pokémon Let's Go, Eevee
+        <br><b>&middot;</b>Pokémon Quest
+        <br> <b>Nintendo 3DS: </b>
+        <br><b>&middot;</b>Pokémon Detective Pikachu
+        <br><img src="2018.png" alt="Let's Go" class="center">
+      </p>
+    </div>
+  </div>
   <div class="container left">
     <div class="content">
       <h2>2017</h2>
-      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+      <p><b>Nintendo 3DS: </b>
+        <br><b>&middot;</b>Pokémon Ultra Sun
+        <br><b>&middot;</b>Pokémon Ultra Moon
+        <br> <b>Nintendo Switch: </b>
+        <br><b>&middot;</b>Pokken Tournament DX
+        <br> <b>Mobile Game: </b>
+        <br><b>&middot;</b>Pokémon Playhouse
+        <br><img src="2017.jpg" alt="Ultra Sun and Moon" class="center">
+      </p>
     </div>
   </div>
   <div class="container right">
     <div class="content">
       <h2>2016</h2>
-      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+      <p> <b>Nintendo 3DS: </b>
+        <br><b>&middot;</b>Pokémon Sun
+        <br><b>&middot;</b>Pokémon Moon
+        <br><b>&middot;</b>Pokémon Rumble World
+        <br> <b>Nintendo Wii U: </b>
+        <br><b>&middot;</b>Pokken Tournament
+        <br> <b>Mobile Game: </b>
+        <br><b>&middot;</b>Pokémon Duel
+        <br><img src="2016.jpg" alt="Sun and Moon" class="center">
+      </p>
     </div>
   </div>
   <div class="container left">
     <div class="content">
       <h2>2015</h2>
-      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+      <p><b>Nintendo 3DS: </b>
+        <br><b>&middot;</b>Pokémon Super Mystery Dungeon
+        <br><b>&middot;</b>Pokémon Picross
+        <br><b>&middot;</b>Pokémon Shuffle
+        <br><b>Mobile Game: </b>
+        <br><b>&middot;</b>Pokémon Shuffle Mobile
+        <br><b>&middot;</b>Dancing? Pokémon Band
+        <br><b>&middot;</b>Pokémon GO
+        <br><img src="2015.jpg" alt="Pokemon Go" class="center">
+      </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2014</h2>
+      <p><b>Nintendo 3DS: </b>
+        <br><b>&middot;</b>Pokémon Omega Ruby
+        <br><b>&middot;</b>Pokémon Alpha Sapphire
+        <br><b>&middot;</b>Pokémon Battle Trozei
+        <br><b>&middot;</b>The Thieves and the 1000 Pokémon
+        <br><b>&middot;</b>Pokémon Art Academy
+        <br><b>Mobile Game: </b>
+        <br><b>&middot;</b>Camp Pokémon
+        <br><img src="2014.jpg" alt="Omega Ruby and Sapphire" class="center">
+      </p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2013</h2>
+      <p><b>Nintendo 3DS: </b>
+        <br><b>&middot;</b>Pokémon X
+        <br><b>&middot;</b>Pokémon Y
+        <br><b>Nintendo Wii U: </b>
+        <br><b>&middot;</b>Pokémon Rumble U
+        <br><img src="2013.jpeg" alt="XY" class="center">
+      </p>
     </div>
   </div>
   <div class="container right">
     <div class="content">
       <h2>2012</h2>
-      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+      <p><b>Nintendo 3DS: </b>
+        <br><b>&middot;</b>Pokémon Mystery Dungeon: Gates to Infinity
+        <br><b>Nintendo DS: </b>
+        <br><b>&middot;</b>Pokémon Black 2
+        <br><b>&middot;</b>Pokémon White 2
+        <br><img src="2012.jpg" alt="BW2" class="center">
+      </p>
     </div>
   </div>
   <div class="container left">
     <div class="content">
       <h2>2011</h2>
-      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+      <p><b>Nintendo 3DS: </b>
+        <br><b>&middot;</b>Pokémon Rumble Blast
+        <br><b>Nintendo DS: </b>
+        <br><b>&middot;</b>Pokémon Card Game: How to Play DS
+        <br><b>&middot;</b>Learn with Pokémon: Typing Adventure
+        <br><b>PC Title: </b>
+        <br><b>&middot;</b>Pokémon Trading Card Game Online
+          <br><b>Mobile Game: </b>
+          <br><b>&middot;</b>Pokémon Say Tap?
+        <br><img src="2011.jpg" alt="Rumble Blast" class="center">
+      </p>
     </div>
   </div>
   <div class="container right">
     <div class="content">
-      <h2>2007</h2>
-      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+      <h2>2010</h2>
+      <p><b>Nintendo DS: </b>
+        <br><b>&middot;</b>Pokémon Black
+        <br><b>&middot;</b>Pokémon White
+        <br><b>&middot;</b>Pokémon Ranger: Guardian Signs
+      <br><img src="2010.jpg" alt="BW" class="center">
+      </p>
     </div>
   </div>
-</div>
+  <div class="container left">
+    <div class="content">
+      <h2>2009</h2>
+      <p><b>Nintendo DS: </b>
+        <br><b>&middot;</b>Pokémon HeartGold
+        <br><b>&middot;</b>Pokémon SoulSilver
+        <br><b>&middot;</b>Pokémon Mystery Dungeon: Explorers of Sky
+        <br><b>Nintendo Wii: </b>
+        <br><b>&middot;</b>PokePark Wii: Pikachu's Adventure
+        <br><b>Nintendo WiiWare: </b>
+        <br><b>&middot;</b>Pokémon Mystery Dungeon: Keep Going! Blazing Adventure Squad
+        <br><b>&middot;</b>Pokémon Mystery Dungeon: Let's Go! Stormy Adventure Squad
+        <br><b>&middot;</b>Pokémon Mystery Dungeon: Go For It! Light Adventure Squad
+        <br><b>&middot;</b><b>&middot;</b>Pokémon Rumble
+        <br><img src="2009.jpg" alt="HeartGold and SoulSilver" class="center">
+      </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2008</h2>
+      <p><b>Nintendo DS: </b>
+        <br><b>&middot;</b>Pokémon Platinum
+        <br><b>&middot;</b>Pokémon Ranger: Shadows of Almia
+        <br><img src="2008.png" alt="Ranger: Shadows of Almia" class="center">
+      </p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2007</h2>
+      <p><b>Nintendo DS: </b>
+        <br><b>&middot;</b>Pokémon Mystery Dungeon: Explorers of Time
+        <br><b>&middot;</b>Pokémon Mystery Dungeon: Explorers of Darkness
+      <br><img src="2007.jpg" alt="Time and Darkness" class="center">
+      </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2006</h2>
+      <p><b>Nintendo DS: </b>
+        <br><b>&middot;</b>Pokémon Ranger
+        <br><b>&middot;</b>Pokémon Diamond
+        <br><b>&middot;</b>Pokémon Pearl
+        <br><b>PC Titles: </b>
+        <br><b>&middot;</b>Pokémon Team Rocket Blast Off
+        <br><b>&middot;</b>Pokémon Poke Ball Launcher
+        <br><b>&middot;</b>Pokémon Seek & Find
+        <br><img src="2006.jpg" alt="Diamond and Pearl" class="center">
+      </p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2005</h2>
+      <p><b>Nintendo Gamecube: </b>
+        <br><b>&middot;</b>Pokémon XD: Gale of Darkness
+        <br><b>Nintendo Gameboy Advanced: </b>
+        <br><b>&middot;</b>Pokémon Mystery Dungeon: Red Rescue Team
+        <br><b>&middot;</b>Pokémon Mystery Dungeon: Blue Rescue Team
+        <br><b>Nintendo DS: </b>
+        <br><b>&middot;</b>Pokémon Trozei
+          <br><b>PC Titles: </b>
+          <br><b>&middot;</b>Pokémon Team Turbo
+          <br><img src="2005.jpg" alt="Gale of Darkness" class="center">
+      </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2004</h2>
+      <p><b>Nintendo DS: </b>
+        <br><b>&middot;</b>Pokémon Dash
+        <br><b>PC Titles: </b>
+        <br><b>&middot;</b>Pokémon Masters Arena
+        <br><img src="2004.jpg" alt="Dash" class="center">
+      </p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2003</h2>
+      <p><b>Nintendo Gamecube: </b>
+        <br><b>&middot;</b>Pokémon Colosseum
+        <br><b>&middot;</b>Pokémon Channel
+        <br><b>Nintendo Gameboy Advanced: </b>
+        <br><b>&middot;</b>Pokémon Pinball
+        <br><img src="2003.jpg" alt="Colosseum" class="center">
+      </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2002</h2>
+      <p><b>Nintendo Gameboy Advanced: </b>
+        <br><b>&middot;</b>Pokémon Ruby
+        <br><b>&middot;</b>Pokémon Sapphire
+        <br><img src="2002.jpg" alt="Ruby and Sapphire" class="center">
+      </p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2001</h2>
+      <p><b>Nintendo Gameboy Color: </b>
+        <br><b>&middot;</b>Pokémon Card GB2: Here Comes Team GR!
+        <br><img src="2001.png" alt="Here Comes Team GR!" class="center">
+      </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2000</h2>
+      <p><b>PC Titles: </b>
+        <br><b>&middot;</b>Pokémon Play It! Version 2
+        <br><img src="2000.jpg" alt="Gold, Silver" class="center">
+      </p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1999</h2>
+      <p><b>Nintendo Gameboy Color: </b>
+        <br><b>&middot;</b>Pokémon Gold
+        <br><b>&middot;</b>Pokémon Silver
+        <br><b>&middot;</b>Pokémon Pinball
+        <br><b>PC Titles: </b>Pokémon Play It!
+        <br><b>Super Nintendo Entertainment System (SNES): </b>
+        <br><b>&middot;</b>Pokémon Picross NP Vol. 1
+        <br><b>Nintendo 64: </b>
+        <br><b>&middot;</b>Pokémon Snap
+        <br><img src="1999.jpg" alt="Gold, Silver" class="center">
+      </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1998</h2>
+      <p><b>Nintendo Gameboy Color: </b>
+        <br><b>&middot;</b>Pokémon Trading Card Game
+        <br><b>Nintendo Gameboy: </b>
+        <br><b>&middot;</b>Pokémon Yellow
+        <br><b>Nintendo 64: </b>
+        <br><b>&middot;</b>Pokémon Stadium
+        <br><b>&middot;</b>Hey You, Pikachu!
+        <br><img src="1998.png" alt="Yellow" class="center">
+      </p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1996</h2>
+      <p><b>Nintendo Gameboy: </b>
+        <br><b>&middot;</b>Pokémon Red
+        <br><b>&middot;</b>Pokémon Green
+        <br><b>&middot;</b>Pokémon Blue
+        <br><img src="1996.jpg" alt="Red and Blue" class="center">
+      </p>
+    </div>
+  </div>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</div>
+<div>
+<p class="tab">Disclaimer: These images are found from official Pokémon artwork.
+  The images presented above are not created by myself and was compiled from Google Images. </p>
+</div>
 </body>
 </html>
