@@ -7,6 +7,7 @@
 h1{
   font-size: 56px;
   text-align: center;
+  margin-top: .5em;
 }
 
 body {
@@ -15,6 +16,8 @@ body {
 
 table {
   background-color: white;
+  table-layout: fixed;
+  width: 93%;
   border: 1px solid #ddd;
   margin-left: 3em;
   margin-top: 2em;
