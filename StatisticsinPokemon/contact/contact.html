@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8" />
+	<title>Contact</title>
+
+	<!--CSS Styling-->
+	<style>
+		* {
+			margin:0px;
+			font-family: avenir, alcubierre;
+			box-sizing: border-box;
+		}
+		body { 
+			background-image: url("img/background.jpg");
+			min-height: 100%;
+			min-width: 100%;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.nav a {
+			float: right;
+			color: white;
+			text-align: center;
+			padding: 20px;
+			text-decoration: none;
+		 	font-size: 20px; 
+			line-height: 20px;
+			border-radius: 4px;
+		}
+		.nav a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+		h1 {
+			width: 100%;
+			text-align: center;
+			border-bottom: 1px solid#000;
+			line-height: 0.1em;
+			margin:10px 0 20px;
+			font-size: 50px;
+		}
+		h1 span {
+			background:#fff;
+			padding: 0 10px;
+		}
+		.container {
+			width: 80%;
+			height: 600px;
+			background-color: white;
+			padding: 5px;
+			border-radius:5px;
+			margin: auto;
+			overflow-x: auto;
+		}
+		form {
+			text-align: left;
+			padding: 10px;
+		}
+		.container2 {
+			width: 40%;
+			height: 600px;
+			background-color: white;
+			padding: 5px;
+			border-radius:5px;
+			margin: auto;
+			overflow-x: auto;
+		}
+		
+		</style>
+
+</head>
+
+<body>
+	<!--Navigation-->
+	<div class="nav">
+	    <a href="about.html">About</a>
+	    <a href="contact.html">Contact</a>
+	    <a href="portfolio.html">Portfolio</a>
+	    <a href="index.html">Home</a>
+	</div>
+
+	<!--Gallery-->
+	<div class="container">
+		<br>
+		<h1><span>Contact Me</span></h1>
+		<br>
+		<div class= "container2">
+			<form method="post" action="http://www.smc.edu/">
+				<label>Full Name: </label>
+				<input type="text" name="name" placeholder="John Smith" style="height:25px; width:300px;"><br/><br/>
+				<label>Email: </label>
+				<input type="email" name="email" placeholder="JohnSmith@email.com" style="height:25px; width:335px;"><br/><br/>
+				<label>Phone Number: </label>
+				<input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" style="height:25px; width:265px;"><br/><br/>
+				<label>Comments: </label> <br>
+				<textarea rows="10" cols="62"></textarea>
+				<br/><br/>
+				<input type="submit" value="Submit">
+				<input type="reset" value="Reset">
+				<p><em>Please allow 2 business days for a response. Thanks!</em></p>
+			</form>
+		</div>
+
+		
+	</div>
+</body>
