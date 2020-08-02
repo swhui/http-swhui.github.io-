@@ -1,0 +1,124 @@
+---
+title: "Using Logistic Regression to Predict Pokemon Legendary Status"
+author: "Sharon Hui"
+date: "8/2/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+In this project, we examine how to use logistic regression for dichotomous response variables. In particular, we will look a play dataset on the Pokemon game. This dataset includes 801 Pokemon including their base stats. I will be using a dataset that has information on the Pokemon base total, hp, attack, defense, special attack, special defense, speed, name, and legendary status.
+
+```{r}
+pokemon = read.csv('../datasets/pokemon.csv')
+pokemon = pokemon[, c( "base_total", "hp", "attack", "defense", "sp_attack", "sp_defense", "speed", "name",  "is_legendary")]
+```
+
+
+Notice that if we attempt to use a simple/multiple linear regression with the following assumptions:
+
+ - $\epsilon_i ~ N(0, \sigma_{\epsilon}^2)$
+ - $\epsilon_i$ and $\epsilon_j$ are independent when $i \neq j$
+ - x is independent of $\epsilon$
+
+$$Y_i = \alpha + \beta x_i + \epsilon_i$$
+
+Let $E(Y_i) = \pi_i$.
+
+Then
+
+$$E(Y_i) = \alpha + \beta x_i$$
+
+We run into several problems.
+
+Firstly, this allows $E(Y_i) =\pi_i$ to be greater than 1 or less than 0. In other words, this model would not confine the probability for the response to the unit interval [0, 1]. 
+
+Another problem is that the errors cannot have a normal distribution and cannot have constant variance. Due to the central limit theorem, however, if the sample size is large enough, the assumption of normality can be satisfied. Furthermore, is the probabilities are not extremely close to 0 or 1, then the heteroskedasticity of the errors is not terrible.
+
+
+Consequently, the most serious of problems would be the fact that a linear regression would not confine our probabilities to the unit interval.
+
+We're going to be looking at a dataset, which includes a Pokemon's base stats, including hp, attack, defense, special attack, special defense, speed, name, and its legendary status.
+
+Consider a simple linear regression case:
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+library(ggplot2)
+```
+
+```{r}
+summary(lm(is_legendary~base_total, data = pokemon))
+```
+
+
+
+```{r}
+ggplot(pokemon, aes(x = base_total, y = is_legendary))+
+  geom_point()+
+  geom_smooth(method = "lm", se = FALSE)
+```
+
+As we can see, when we plot base total against the legendary status, we see that the line includes negative is_legendary values, which does not make sense. We cannot have a negative probability that a Pokemon is legendary. Furthermore, the lowest base total is 180, so the linear regression model would be $-4.056e-01 + 1.151e-03 * x = y$. Thus, the predicted probability that a Pokemon would be a legendary is -0.19842, which again, does not make much sense.
+
+```{r}
+lm_simple = (lm(is_legendary~ 
+    base_total, 
+   data = pokemon))
+summary(lm_simple)
+```
+
+
+```{r}
+glm_simple = glm(is_legendary~ 
+                    base_total, 
+                  data = pokemon, family = "binomial")
+```
+
+
+```{r}
+ggplot( pokemon , aes(x=base_total, y=is_legendary)) +
+  geom_point() +
+  geom_smooth(method = "glm", 
+    method.args = list(family = "binomial"), 
+    se = FALSE) 
+```
+
+
+This looks much better than before, as we can see that the line fits the data points much better. Furthermore, they make more sense as the probability is constrained between 0 and 1.
+
+
+Let's look at the RMSE of using both models:
+
+```{r}
+sqrt(mean((predict(glm_simple, pokemon, type = "response") - pokemon$is_legendary)^2))
+```
+
+```{r}
+sqrt(mean((predict(lm_simple, pokemon, type = "response") - pokemon$is_legendary)^2))
+```
+
+
+As we can see, there is a slight improvement from using the logistic regression over the simple linear regression.
+
+
+
+
+```{r}
+glm_pokemon = glm(is_legendary~ 
+                    hp + attack + defense + sp_attack + sp_defense + speed, 
+                  data = pokemon, family = "binomial")
+```
+
+
+```{r}
+sqrt(mean((predict(glm_pokemon, pokemon, type = "response") - pokemon$is_legendary)^2))
+```
+
+Using more variables has also slightly reduced the RMSE.
+
+
+
+
+
