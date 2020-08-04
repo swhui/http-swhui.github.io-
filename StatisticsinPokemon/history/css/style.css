@@ -1,26 +1,36 @@
 * {
-  box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-h1.main{
-  height: 15vh;
-  background-color: rgba(76, 175, 80, 0.4);
-  color: #000;
-  font-family: "Lucida Console", Courier New, monospace;
-  font-size: 100px;
-}
-
-h2{
-  font-family: "Lucida Console", Courier New, monospace;
+h1{
+  font-family: Helvetica, sans-serif;
+  font-size: 56px;
   text-align: center;
-  font-size: 30px;
-  padding-bottom: 0px;
+  margin-top: 0em;
+  color: white;
+}
+
+.nav a {
+  float: right;
+  margin-top: .5em;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 10px;
+  border-radius: 4px;
+}
+.nav a:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 
 body {
-  background-image: url("history-background.jpg");
+  background-image: url("history-background.png");
   background-color: #474e5d;
   font-family: Helvetica, sans-serif;
 }
@@ -70,7 +80,7 @@ body {
 
 /* Place the container to the left */
 .left {
-  left: 0;
+  left: -6.65%;
 }
 
 /* Place the container to the right */
