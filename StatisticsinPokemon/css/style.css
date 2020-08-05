@@ -89,8 +89,11 @@ ul li.active a{
 }
 
 p {
-    width: 1155px; /* change to your preferences */
-    overflow-y: scroll; /* older browsers */
     }
 
-.tab {text-indent:40px}
+.tab {position: absolute;
+top: 75%;
+margin-left: 10%;
+margin-right: 10%;
+color: white;
+}
