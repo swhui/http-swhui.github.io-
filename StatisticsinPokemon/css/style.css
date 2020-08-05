@@ -7,7 +7,7 @@
 
 header{
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(../homepage_background.jpg);
-  height: 100vh;
+  height: 120vh;
   background-size: cover;
   background-position: center;
 }
@@ -67,16 +67,11 @@ ul li.active a{
   margin: auto;
 }
 
-.title{
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
 
-.title h1{
+.tab h1{
   color: #fff;
-  font-size: 40px
+  text-align:center;
+  font-size: 35px
 
 }
 
@@ -89,8 +84,8 @@ ul li.active a{
 
 .tab {
   position: absolute;
-  top: 75%;
   margin-left: 10%;
   margin-right: 10%;
+  margin-top: -5%;
   color: white;
 }
