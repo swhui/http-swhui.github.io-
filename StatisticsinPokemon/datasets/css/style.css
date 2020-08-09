@@ -71,18 +71,27 @@ th, td {
 }
 
 .field1 {
-  width: 100px;
+  width: 9%;
 }
+
+.field2{
+  width: 10%;
+}
+
 
 .field5{
-  width: 74px;
+  width: 8%;
 }
 
-.field6 {
-  width: 170px;
+.field6{
+  width: 30%;
 }
-.field7{
-  width: 70px
+
+.field10 {
+  width: 10%;
+}
+.field13{
+  width: 10%;
 }
 
 
