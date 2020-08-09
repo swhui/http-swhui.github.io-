@@ -43,7 +43,7 @@ ul li.active a{
 
 
 .column {
-  float: left;
+  float:left;
   width: 33.3333%;
   padding: 100px;
 }

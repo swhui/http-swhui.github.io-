@@ -27,6 +27,7 @@ h2.headertekst{
   font-size: 18px;
   line-height: 10px;
   border-radius: 4px;
+  background-color: #D3D3D3;
 }
 .nav a:hover {
   background-color: #fff;
@@ -52,12 +53,13 @@ img{
 .dt {
   border: solid;
   background-color: white;
-  float:right;
   height: 400px;
-  width: 60%;
+  width: 90%;
   position: relative;
   style= overflow-x:auto ;
   margin-right: 5%;
+  margin-left: 5%;
+
 }
 
 .dt h2{
@@ -96,8 +98,29 @@ table {
   overflow-x: scroll;
 }
 
+
 .description {
-  position: absolute;
-  margin-top: 450px;
+  position: relative;
+  margin-top: 4%;
   margin-left: 10px;
+}
+
+.caption {
+  color: #fff;
+  text-align: center;
+  font-size: 25px
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 40px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
